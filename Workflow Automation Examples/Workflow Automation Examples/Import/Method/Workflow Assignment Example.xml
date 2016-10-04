@@ -1,0 +1,55 @@
+﻿<AML>
+ <Item type="Method" id="2617693541E04F2AA670C4A25AFC6B11" action="add">
+  <comments></comments>
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[// Demonstrates dynamic workflow assignment based on properties of the controlled item.
+
+// Get the controlled item.
+Aras.IOM.Innovator innovator = this.getInnovator();
+Item controlledItem = this.newItem(this.getAttribute("type"), "Get Controlled Item CSharp");
+controlledItem.setID(this.getID());
+controlledItem = controlledItem.apply();
+if (controlledItem.getItemCount() != 1)
+{
+ return innovator.newError("Error retrieving the controlled item: " + controlledItem.getErrorDetail());
+}
+
+// Build an array of the reviewers.
+var reviewers = new ArrayList();
+for (int i = 0; i < 3; i++)
+    if (controlledItem.getProperty("reviewer" + (i + 1), "") != "")
+	{
+        reviewers.Add(controlledItem.getProperty("reviewer" + (i + 1), ""));
+	}
+
+// Add an assignment for each reviewer.
+Item assignment = this.newItem("Activity Assignment", "");
+assignment.setAction("add");
+assignment.setPropertyAttribute("locked_by_id","is_null","1");
+assignment.setProperty("source_id", this.getID());
+for (int i = 0; i < reviewers.Count; i++)
+{
+    assignment.setProperty("related_id", (string)reviewers[i]);
+    assignment.setProperty("voting_weight", (100 / reviewers.Count + 1).ToString());
+    Item result = assignment.apply();
+    if (result.isError())
+	{
+        return innovator.newError("Workflow Assignment: Error adding assignment: " + result.getErrorDetail());
+	}
+}
+
+// Change the Activity text (just so a change is visible in the InBasket).
+var activity = this.newItem(this.getAttribute("type"), "edit");
+activity.setID(this.getID());
+activity.setProperty("message", reviewers.Count + " Assignments Added");
+activity = activity.apply();
+if (activity.isError())
+{
+ return innovator.newError("Error editing activity: " + activity.getErrorDetail());
+}
+
+return this;]]></method_code>
+  <method_type>C#</method_type>
+  <name>Workflow Assignment Example CS</name>
+ </Item>
+</AML>

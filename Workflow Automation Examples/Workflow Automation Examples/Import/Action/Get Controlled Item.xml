@@ -1,0 +1,14 @@
+﻿<AML>
+ <Item type="Action" id="FCF34AD7044F4F78BECFE1831A27F680" action="add">
+  <item_query></item_query>
+  <location>server</location>
+  <method keyed_name="Get Controlled Item CSharp" type="Method">
+   <Item type="Method" action="get" select="id">
+    <name>Get Controlled Item CSharp</name>
+   </Item>
+  </method>
+  <target>none</target>
+  <type>item</type>
+  <name>Get Controlled Item CSharp</name>
+ </Item>
+</AML>

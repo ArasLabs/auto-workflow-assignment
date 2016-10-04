@@ -1,0 +1,159 @@
+﻿<AML>
+ <Item type="Form" id="75A8B6783DEC4664BBF5239516458AC2" action="add">
+  <category_form>0</category_form>
+  <height>234</height>
+  <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
+  <width>699</width>
+  <name>Workflow Assignment Example</name>
+  <Relationships>
+   <Item type="Body" id="23B03681950F4D6D82EB5EDCB2074BFF" action="add">
+    <bg_attach>scroll</bg_attach>
+    <bg_color>#FFFFFF</bg_color>
+    <bg_image>../images/Backgrounds/wvleft.gif</bg_image>
+    <bg_repeat>no-repeat</bg_repeat>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Workflow Assignment Example" type="Form">75A8B6783DEC4664BBF5239516458AC2</source_id>
+    <Relationships>
+     <Item type="Field" id="1BA571F6971548F1923A2BAA7AB2F85E" action="add">
+      <bg_color>#FFFFFF</bg_color>
+      <field_type>html</field_type>
+      <html_code><![CDATA[<span id="ITEM_INFO_INTERNAL_SPAN"/>
+<script>
+  populate_ITEM_INFO_INTERNAL_SPAN = function()
+  {
+    document.getElementById("ITEM_INFO_INTERNAL_SPAN").innerHTML = top.aras.uiGetItemInfoTable(document.itemType);
+  }
+  window.attachEvent("onload", populate_ITEM_INFO_INTERNAL_SPAN);
+</script>]]></html_code>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <list_no_blank>0</list_no_blank>
+      <positioning>absolute</positioning>
+      <sort_order>512</sort_order>
+      <source_id keyed_name="23B03681950F4D6D82EB5EDCB2074BFF" type="Body">23B03681950F4D6D82EB5EDCB2074BFF</source_id>
+      <tab_stop>0</tab_stop>
+      <x>0</x>
+      <y>0</y>
+      <name>item_info</name>
+     </Item>
+     <Item type="Field" id="2C8FB9045ADC4D309A4EE7E0B06A325B" action="add">
+      <bg_color>#FFFFFF</bg_color>
+      <border_width>0</border_width>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Item Number</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <positioning>absolute</positioning>
+      <propertytype_id keyed_name="item_number" type="Property">D94E80FF68BB44FEA19BEADCF1055E9C</propertytype_id>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="23B03681950F4D6D82EB5EDCB2074BFF" type="Body">23B03681950F4D6D82EB5EDCB2074BFF</source_id>
+      <tab_index>0</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>10</y>
+      <name>item_number</name>
+     </Item>
+     <Item type="Field" id="8DACF21CF5844C348C57D568A19F8742" action="add">
+      <bg_color>#FFFFFF</bg_color>
+      <border_width>0</border_width>
+      <display_length>64</display_length>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Name</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <positioning>absolute</positioning>
+      <propertytype_id keyed_name="name" type="Property">9C198EC1CEB6417D98B09B4A8591329D</propertytype_id>
+      <sort_order>256</sort_order>
+      <source_id keyed_name="23B03681950F4D6D82EB5EDCB2074BFF" type="Body">23B03681950F4D6D82EB5EDCB2074BFF</source_id>
+      <tab_index>128</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>50</y>
+      <name>name</name>
+     </Item>
+     <Item type="Field" id="64879E12C2674BCF82F456E2518FA113" action="add">
+      <bg_color>#FFFFFF</bg_color>
+      <border_width>0</border_width>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Reviewer 1</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <positioning>absolute</positioning>
+      <propertytype_id keyed_name="reviewer1" type="Property">0C71B23031FA4E3DACB764773649DE54</propertytype_id>
+      <sort_order>640</sort_order>
+      <source_id keyed_name="23B03681950F4D6D82EB5EDCB2074BFF" type="Body">23B03681950F4D6D82EB5EDCB2074BFF</source_id>
+      <tab_index>256</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>90</y>
+      <name>reviewer1</name>
+     </Item>
+     <Item type="Field" id="9EA54919A6924448B028E0831D5F6946" action="add">
+      <bg_color>#FFFFFF</bg_color>
+      <border_width>0</border_width>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Reviewer 2</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <positioning>absolute</positioning>
+      <propertytype_id keyed_name="reviewer2" type="Property">515E9E1B79DF44D48D70738B26735683</propertytype_id>
+      <sort_order>768</sort_order>
+      <source_id keyed_name="23B03681950F4D6D82EB5EDCB2074BFF" type="Body">23B03681950F4D6D82EB5EDCB2074BFF</source_id>
+      <tab_index>384</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>130</y>
+      <name>reviewer2</name>
+     </Item>
+     <Item type="Field" id="0650C47BFF5548E49659A170396F18A7" action="add">
+      <bg_color>#FFFFFF</bg_color>
+      <border_width>0</border_width>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Reviewer 3</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <positioning>absolute</positioning>
+      <propertytype_id keyed_name="reviewer3" type="Property">9E71B631994349918EB77434ADD5CDB1</propertytype_id>
+      <sort_order>896</sort_order>
+      <source_id keyed_name="23B03681950F4D6D82EB5EDCB2074BFF" type="Body">23B03681950F4D6D82EB5EDCB2074BFF</source_id>
+      <tab_index>512</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>170</y>
+      <name>reviewer3</name>
+     </Item>
+    </Relationships>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

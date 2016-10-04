@@ -1,0 +1,83 @@
+﻿<AML>
+ <Item type="Method" id="DD92B22C33BD4D298238B78573711BD1" action="add">
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[// Find the Controlled Item for a Workflow Process or Activity.
+
+Aras.IOM.Innovator innovator = this.getInnovator();
+// Handle the case where this method is called from ApplyMethod.
+XmlDocument xDoc = new XmlDocument();
+if ((this.getAttribute("type", "") == "Method") & (this.node.SelectSingleNode("Item") != null))
+{    
+	this.node = xDoc.CreateElement(this.node.SelectSingleNode("Item").ToString());
+}
+Item query1 = this.newItem();
+Item query2 = this.newItem();
+Item query3 = this.newItem();
+string workflowProcessID = "";
+
+// Get the Workflow Process.
+switch (this.getType())
+{
+    case "Workflow Process":
+        workflowProcessID = this.getID();
+        break;
+    case "Activity":
+    {
+        String activityId = this.getID();
+        if (activityId.Length != 32)
+		{
+            return innovator.newError("Get Controlled Item: Invalid Activity id");
+		}		
+        query1 = this.newItem("Workflow Process", "get");
+        query1.setAttribute("select", "id");
+        query2 = query1.createRelationship("Workflow Process Activity", "get");
+        query2.setAttribute("select", "id,related_id");
+        query3 = query2.createRelatedItem("Activity", "get");
+        query3.setAttribute("select", "id");
+        query3.setID(activityId);
+        var workflowProcess = query1.apply();
+        if (workflowProcess.getItemCount() != 1)
+		{
+            return innovator.newError("Get Controlled Item: Error getting Workflow Process: " + workflowProcess.getErrorDetail());
+		}
+        workflowProcessID = workflowProcess.getID();
+        break;
+    }
+    default:
+        return innovator.newError("Get Controlled Item: Type must be Workflow Process or Activity");
+}
+
+if (workflowProcessID.Length != 32)
+{
+ return innovator.newError("Get Controlled Item: Invalid Workflow Process id");
+}
+
+// Get the Workflow relationship;
+query1 = this.newItem("Workflow", "get");
+query1.setAttribute("select", "id,related_id,source_id,source_type");
+query2 = query1.createRelatedItem("Workflow Process", "get");
+query2.setAttribute("select", "id");
+query2.setID(workflowProcessID);
+
+Item workflow = query1.apply();
+if (workflow.getItemCount() != 1)
+{
+ return innovator.newError("Get Controlled Item: Error retriving the Workflow relationship: " + workflow.getErrorDetail());
+}
+string controlledId = workflow.getProperty("source_id", "");
+if (controlledId.Length != 32)
+{
+ return innovator.newError("Get Controlled Item: Invalid Controlled Item id");
+}
+
+// Get the controlled item.
+query3 = this.newItem();
+query3.setAction("get");
+query3.setAttribute("typeId", workflow.getProperty("source_type", ""));
+query3.setID(controlledId);
+Item controlledItem = query3.apply();
+return controlledItem;]]></method_code>
+  <method_type>C#</method_type>
+  <name>Get Controlled Item CSharp</name>
+ </Item>
+</AML>

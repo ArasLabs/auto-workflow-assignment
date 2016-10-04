@@ -1,0 +1,3 @@
+<imports>
+  <package name="Workflow Automation Examples" path="Workflow Automation Examples\Import" />
+</imports>
