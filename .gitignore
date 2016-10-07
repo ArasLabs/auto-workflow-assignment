@@ -1,14 +1,6 @@
-*.sdf
-*.vspscc
-*.suo
-Debug
-Release
-AppPackages
-*.vssscc
-*.user
-*.ipch
-*.opensdf
-BundleArtifacts
-.DS_Store
-*.userprefs
-*.a
+# ignore logs
+Test\Logs\*.log
+Test/Logs/*.log
+
+Test\package\*
+Test/package/*
