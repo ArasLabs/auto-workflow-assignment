@@ -1,7 +1,0 @@
-﻿<AML>
- <Item type="Sequence" id="218398EFE4D04BB2A54D35E1C2FE65A7" action="add">
-  <initial_value>0</initial_value>
-  <prefix>WLE-</prefix>
-  <name>Workflow Launch Example</name>
- </Item>
-</AML>

@@ -4,7 +4,7 @@
   <height>234</height>
   <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
   <width>699</width>
-  <name>Workflow Assignment Example</name>
+  <name>labs_WorkflowAssignmentExample</name>
   <Relationships>
    <Item type="Body" id="23B03681950F4D6D82EB5EDCB2074BFF" action="add">
     <bg_attach>scroll</bg_attach>
@@ -12,7 +12,7 @@
     <bg_image>../images/Backgrounds/wvleft.gif</bg_image>
     <bg_repeat>no-repeat</bg_repeat>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="Form">75A8B6783DEC4664BBF5239516458AC2</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="Form">75A8B6783DEC4664BBF5239516458AC2</source_id>
     <Relationships>
      <Item type="Field" id="1BA571F6971548F1923A2BAA7AB2F85E" action="add">
       <bg_color>#FFFFFF</bg_color>

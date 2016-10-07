@@ -10,18 +10,18 @@
   <is_dependent>0</is_dependent>
   <is_relationship>0</is_relationship>
   <is_versionable>0</is_versionable>
-  <label xml:lang="en">Workflow Assignment Example</label>
-  <label_plural xml:lang="en">Workflow Assignment Example</label_plural>
+  <label xml:lang="en">labs_WorkflowAssignmentExample</label>
+  <label_plural xml:lang="en">labs_WorkflowAssignmentExample</label_plural>
   <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
   <show_parameters_tab>1</show_parameters_tab>
   <structure_view>tabs off</structure_view>
   <unlock_on_logout>0</unlock_on_logout>
   <use_src_access>0</use_src_access>
-  <name>Workflow Assignment Example</name>
+  <name>labs_WorkflowAssignmentExample</name>
   <Relationships>
    <Item type="Property" id="D94E80FF68BB44FEA19BEADCF1055E9C" action="add">
     <column_alignment>left</column_alignment>
-    <data_source keyed_name="Workflow Assignment Example">ACAA37EE7C824F92A939CB208695B66D</data_source>
+    <data_source keyed_name="labs_WorkflowAssignmentExample">ACAA37EE7C824F92A939CB208695B66D</data_source>
     <data_type>sequence</data_type>
     <is_hidden>0</is_hidden>
     <is_hidden2>0</is_hidden2>
@@ -35,7 +35,7 @@
     <range_inclusive>0</range_inclusive>
     <readonly>0</readonly>
     <sort_order>0</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="ItemType" name="Workflow Assignment Example">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="ItemType" name="labs_WorkflowAssignmentExample">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
     <track_history>0</track_history>
     <name>item_number</name>
    </Item>
@@ -52,7 +52,7 @@
     <range_inclusive>0</range_inclusive>
     <readonly>0</readonly>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="ItemType" name="Workflow Assignment Example">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="ItemType" name="labs_WorkflowAssignmentExample">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
     <stored_length>64</stored_length>
     <track_history>0</track_history>
     <name>name</name>
@@ -72,7 +72,7 @@
     <range_inclusive>0</range_inclusive>
     <readonly>0</readonly>
     <sort_order>256</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="ItemType" name="Workflow Assignment Example">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="ItemType" name="labs_WorkflowAssignmentExample">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
     <track_history>0</track_history>
     <name>reviewer1</name>
    </Item>
@@ -91,7 +91,7 @@
     <range_inclusive>0</range_inclusive>
     <readonly>0</readonly>
     <sort_order>384</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="ItemType" name="Workflow Assignment Example">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="ItemType" name="labs_WorkflowAssignmentExample">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
     <track_history>0</track_history>
     <name>reviewer2</name>
    </Item>
@@ -110,13 +110,13 @@
     <range_inclusive>0</range_inclusive>
     <readonly>0</readonly>
     <sort_order>512</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="ItemType" name="Workflow Assignment Example">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="ItemType" name="labs_WorkflowAssignmentExample">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
     <track_history>0</track_history>
     <name>reviewer3</name>
    </Item>
    <Item type="View" id="6ECAA20799B24F74A6D31A3088963F30" action="add">
     <client>js</client>
-    <related_id keyed_name="Workflow Assignment Example" type="Form">75A8B6783DEC4664BBF5239516458AC2</related_id>
+    <related_id keyed_name="labs_WorkflowAssignmentExample" type="Form">75A8B6783DEC4664BBF5239516458AC2</related_id>
     <role keyed_name="World" type="Identity">
      <Item type="Identity" action="get" select="id">
       <name>World</name>
@@ -124,24 +124,24 @@
     </role>
     <show_ssvc>0</show_ssvc>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="ItemType" name="Workflow Assignment Example">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="ItemType" name="labs_WorkflowAssignmentExample">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
     <type>default</type>
    </Item>
    <Item type="ItemType Life Cycle" id="82B1559B19274E098DFE3688E90B16C0" action="add">
     <related_id keyed_name="Default" type="Life Cycle Map">2F3B75E17C4E4F2D9599579A965BFA64</related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="ItemType" name="Workflow Assignment Example">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="ItemType" name="labs_WorkflowAssignmentExample">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
    </Item>
    <Item type="Allowed Workflow" id="E1F4B019178C417588EF2B95CB9794BD" action="add">
     <is_default>1</is_default>
-    <related_id keyed_name="Workflow Assignment Example" type="Workflow Map">45EAF70528D041E084E2A331E973CD29</related_id>
+    <related_id keyed_name="labs_WorkflowAssignmentExample" type="Workflow Map">45EAF70528D041E084E2A331E973CD29</related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="ItemType" name="Workflow Assignment Example">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="ItemType" name="labs_WorkflowAssignmentExample">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
    </Item>
    <Item type="TOC Access" id="07676E089CF445E6B52F1067FF4A0C28" action="add">
     <related_id keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="ItemType" name="Workflow Assignment Example">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="ItemType" name="labs_WorkflowAssignmentExample">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
     <category>Workflow Examples</category>
    </Item>
    <Item type="Can Add" id="66BB98CDDEAF486E90E90D5C45C0999F" action="add">
@@ -152,13 +152,13 @@
      </Item>
     </related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="ItemType" name="Workflow Assignment Example">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="ItemType" name="labs_WorkflowAssignmentExample">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
    </Item>
    <Item type="Allowed Permission" id="5D4E04B4370C412FBB5155BCF7024425" action="add">
     <is_default>1</is_default>
-    <related_id keyed_name="Workflow Assignment Example" type="Permission">A35B6EF9512448B29B7EF5BCAFD1EFB5</related_id>
+    <related_id keyed_name="labs_WorkflowAssignmentExample" type="Permission">A35B6EF9512448B29B7EF5BCAFD1EFB5</related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="ItemType" name="Workflow Assignment Example">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="ItemType" name="labs_WorkflowAssignmentExample">B4719B8F3D0B450AAF86B3C23AD4FDB8</source_id>
    </Item>
   </Relationships>
  </Item>

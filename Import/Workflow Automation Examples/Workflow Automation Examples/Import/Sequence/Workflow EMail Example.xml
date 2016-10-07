@@ -1,7 +1,0 @@
-﻿<AML>
- <Item type="Sequence" id="1C61638A0E8F416699C87BA369293EF7" action="add">
-  <initial_value>0</initial_value>
-  <prefix>WEE-</prefix>
-  <name>Workflow EMail Example</name>
- </Item>
-</AML>

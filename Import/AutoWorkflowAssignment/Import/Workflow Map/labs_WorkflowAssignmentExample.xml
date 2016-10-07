@@ -1,5 +1,5 @@
 ﻿<AML>
- <Item type="Workflow Map" id="645D30ECD71D405AB3A7524CEA7A9CD1" action="add">
+ <Item type="Workflow Map" id="45EAF70528D041E084E2A331E973CD29" action="add">
   <description xml:lang="en"></description>
   <node_bg_color>       </node_bg_color>
   <node_label1_color>       </node_label1_color>
@@ -17,11 +17,37 @@
   <transition_line_color>       </transition_line_color>
   <transition_name_color>       </transition_name_color>
   <transition_name_font></transition_name_font>
-  <name>Workflow Launch Example</name>
+  <name>labs_WorkflowAssignmentExample</name>
   <Relationships>
    <Item type="Workflow Map Activity" action="add">
+    <related_id keyed_name="End" type="Activity Template">
+     <Item type="Activity Template" id="3A06C3A1EF94477E903B4387F2E849C7" action="add">
+      <can_delegate>0</can_delegate>
+      <can_refuse>0</can_refuse>
+      <consolidate_ondelegate>0</consolidate_ondelegate>
+      <expected_duration>0</expected_duration>
+      <icon>../images/Icons/16x16/16x16_redx.gif</icon>
+      <is_auto>1</is_auto>
+      <is_end>1</is_end>
+      <is_start>0</is_start>
+      <message xml:lang="en">Workflow End</message>
+      <priority>1</priority>
+      <reminder_count>0</reminder_count>
+      <reminder_interval>0</reminder_interval>
+      <timeout_duration>0</timeout_duration>
+      <wait_for_all_inputs>0</wait_for_all_inputs>
+      <wait_for_all_votes>0</wait_for_all_votes>
+      <x>200</x>
+      <y>20</y>
+      <name>End</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="Workflow Map">45EAF70528D041E084E2A331E973CD29</source_id>
+   </Item>
+   <Item type="Workflow Map Activity" action="add">
     <related_id keyed_name="Start" type="Activity Template">
-     <Item type="Activity Template" id="8EE0345B19C643F78F5DBFD1A81CF3CD" action="add">
+     <Item type="Activity Template" id="B1B8B26363744FA1A8488944128AB7C9" action="add">
       <can_delegate>0</can_delegate>
       <can_refuse>0</can_refuse>
       <consolidate_ondelegate>0</consolidate_ondelegate>
@@ -41,51 +67,25 @@
       <y>20</y>
       <name>Start</name>
       <Relationships>
-       <Item type="Workflow Map Path" id="B2743A3950C64C8E8683D962F3131C9F" action="add">
+       <Item type="Workflow Map Path" id="AC3DF40C25554A28AE68BC67960ED2DB" action="add">
         <authentication>none</authentication>
         <is_default>1</is_default>
         <is_override>0</is_override>
         <name>Go</name>
-        <related_id>F72A54B9AEF448DFAAFF4BDC6F1CBFA4</related_id>
+        <related_id>47C60484905B40C687801D6953295211</related_id>
         <segments></segments>
         <sort_order>128</sort_order>
-        <source_id keyed_name="Start" type="Activity Template">8EE0345B19C643F78F5DBFD1A81CF3CD</source_id>
+        <source_id keyed_name="Start" type="Activity Template">B1B8B26363744FA1A8488944128AB7C9</source_id>
        </Item>
       </Relationships>
      </Item>
     </related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Launch Example" type="Workflow Map">645D30ECD71D405AB3A7524CEA7A9CD1</source_id>
-   </Item>
-   <Item type="Workflow Map Activity" action="add">
-    <related_id keyed_name="End" type="Activity Template">
-     <Item type="Activity Template" id="4C1FAA20CFFA41F39C7581B8E21F973D" action="add">
-      <can_delegate>0</can_delegate>
-      <can_refuse>0</can_refuse>
-      <consolidate_ondelegate>0</consolidate_ondelegate>
-      <expected_duration>0</expected_duration>
-      <icon>../images/Icons/16x16/16x16_redx.gif</icon>
-      <is_auto>1</is_auto>
-      <is_end>1</is_end>
-      <is_start>0</is_start>
-      <message xml:lang="en">Workflow End</message>
-      <priority>1</priority>
-      <reminder_count>0</reminder_count>
-      <reminder_interval>0</reminder_interval>
-      <timeout_duration>0</timeout_duration>
-      <wait_for_all_inputs>0</wait_for_all_inputs>
-      <wait_for_all_votes>0</wait_for_all_votes>
-      <x>261</x>
-      <y>46</y>
-      <name>End</name>
-     </Item>
-    </related_id>
-    <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Launch Example" type="Workflow Map">645D30ECD71D405AB3A7524CEA7A9CD1</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="Workflow Map">45EAF70528D041E084E2A331E973CD29</source_id>
    </Item>
    <Item type="Workflow Map Activity" action="add">
     <related_id keyed_name="Do Something" type="Activity Template">
-     <Item type="Activity Template" id="F72A54B9AEF448DFAAFF4BDC6F1CBFA4" action="add">
+     <Item type="Activity Template" id="47C60484905B40C687801D6953295211" action="add">
       <can_delegate>0</can_delegate>
       <can_refuse>0</can_refuse>
       <consolidate_ondelegate>0</consolidate_ondelegate>
@@ -101,36 +101,34 @@
       <message xml:lang="en">Do some work</message>
       <wait_for_all_inputs>0</wait_for_all_inputs>
       <wait_for_all_votes>0</wait_for_all_votes>
-      <x>129</x>
-      <y>32</y>
+      <x>112</x>
+      <y>20</y>
       <name>Do Something</name>
       <Relationships>
-       <Item type="Activity Template Assignment" id="4DCD90A78D9346A29E24B28ED2B93455" action="add">
-        <related_id keyed_name="Innovator Admin" type="Identity">
-         <Item type="Identity" action="get" select="id">
-          <name>Innovator Admin</name>
+       <Item type="Activity Template Method" id="C4CEFE0041534584AFF3A7780BF33D33" action="add">
+        <event>on_activate</event>
+        <related_id keyed_name="labs_WorkflowAssignmentExample CS" type="Method">
+         <Item type="Method" action="get" select="id">
+          <name>labs_WorkflowAssignmentExampleCS</name>
          </Item>
         </related_id>
-        <sort_order>128</sort_order>
-        <source_id keyed_name="Do Something" type="Activity Template">F72A54B9AEF448DFAAFF4BDC6F1CBFA4</source_id>
-        <is_required>0</is_required>
-        <for_all_members>0</for_all_members>
-        <voting_weight>100</voting_weight>
+        <sort_order>256</sort_order>
+        <source_id keyed_name="Do Something" type="Activity Template">47C60484905B40C687801D6953295211</source_id>
        </Item>
-       <Item type="Workflow Map Path" id="C4FB3C6DBCA24D22B5A7CF1D14A0C63B" action="add">
+       <Item type="Workflow Map Path" id="076D528E7FCD4488992857CFA3B5316E" action="add">
         <authentication>none</authentication>
         <is_default>0</is_default>
         <is_override>0</is_override>
-        <name>Done</name>
-        <related_id>4C1FAA20CFFA41F39C7581B8E21F973D</related_id>
+        <name>Complete</name>
+        <related_id>3A06C3A1EF94477E903B4387F2E849C7</related_id>
         <sort_order>128</sort_order>
-        <source_id keyed_name="Do Something" type="Activity Template">F72A54B9AEF448DFAAFF4BDC6F1CBFA4</source_id>
+        <source_id keyed_name="Do Something" type="Activity Template">47C60484905B40C687801D6953295211</source_id>
        </Item>
       </Relationships>
      </Item>
     </related_id>
     <sort_order>256</sort_order>
-    <source_id keyed_name="Workflow Launch Example" type="Workflow Map">645D30ECD71D405AB3A7524CEA7A9CD1</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="Workflow Map">45EAF70528D041E084E2A331E973CD29</source_id>
    </Item>
   </Relationships>
  </Item>

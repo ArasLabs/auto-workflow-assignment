@@ -7,7 +7,7 @@ Aras.IOM.Innovator innovator = this.getInnovator();
 // Handle the case where this method is called from ApplyMethod.
 XmlDocument xDoc = new XmlDocument();
 if ((this.getAttribute("type", "") == "Method") & (this.node.SelectSingleNode("Item") != null))
-{    
+{
 	this.node = xDoc.CreateElement(this.node.SelectSingleNode("Item").ToString());
 }
 Item query1 = this.newItem();
@@ -27,7 +27,7 @@ switch (this.getType())
         if (activityId.Length != 32)
 		{
             return innovator.newError("Get Controlled Item: Invalid Activity id");
-		}		
+		}
         query1 = this.newItem("Workflow Process", "get");
         query1.setAttribute("select", "id");
         query2 = query1.createRelationship("Workflow Process Activity", "get");
@@ -78,6 +78,6 @@ query3.setID(controlledId);
 Item controlledItem = query3.apply();
 return controlledItem;]]></method_code>
   <method_type>C#</method_type>
-  <name>Get Controlled Item CSharp</name>
+  <name>labs_GetControlledItemCSharp</name>
  </Item>
 </AML>

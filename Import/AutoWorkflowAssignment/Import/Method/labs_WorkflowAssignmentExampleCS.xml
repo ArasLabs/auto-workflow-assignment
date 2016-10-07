@@ -50,6 +50,6 @@ if (activity.isError())
 
 return this;]]></method_code>
   <method_type>C#</method_type>
-  <name>Workflow Assignment Example CS</name>
+  <name>labs_WorkflowAssignmentExampleCS</name>
  </Item>
 </AML>

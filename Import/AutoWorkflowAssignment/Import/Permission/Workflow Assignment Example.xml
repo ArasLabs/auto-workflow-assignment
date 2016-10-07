@@ -1,7 +1,7 @@
 ﻿<AML>
  <Item type="Permission" id="A35B6EF9512448B29B7EF5BCAFD1EFB5" action="add">
   <is_private>0</is_private>
-  <name>Workflow Assignment Example</name>
+  <name>labs_WorkflowAssignmentExample</name>
   <Relationships>
    <Item type="Access" id="986A2EECCF1144609C59EC0A45B1253E" action="add">
     <can_change_access>1</can_change_access>
@@ -16,7 +16,7 @@
     </related_id>
     <show_permissions_warning>0</show_permissions_warning>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow Assignment Example" type="Permission">A35B6EF9512448B29B7EF5BCAFD1EFB5</source_id>
+    <source_id keyed_name="labs_WorkflowAssignmentExample" type="Permission">A35B6EF9512448B29B7EF5BCAFD1EFB5</source_id>
    </Item>
   </Relationships>
  </Item>

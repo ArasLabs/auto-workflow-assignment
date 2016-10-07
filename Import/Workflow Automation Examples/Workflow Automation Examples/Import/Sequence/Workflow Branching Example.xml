@@ -1,7 +1,0 @@
-﻿<AML>
- <Item type="Sequence" id="D503F96E44F94A7DB085BD9EBBC592C0" action="add">
-  <initial_value>0</initial_value>
-  <prefix>WBE-</prefix>
-  <name>Workflow Branching Example</name>
- </Item>
-</AML>
