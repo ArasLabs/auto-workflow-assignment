@@ -67,9 +67,9 @@ For more information on contributing to this project, another Aras Labs project,
 
 Original Aras community project written by Rob McAveney at Aras Corp.
 
-Project rewritten for Aras 11.0 by Alexander Sklyarskiy (@asklyarskiy).
+Project rewritten for Aras 11.0 by Alexander Sklyarskiy. @asklyarskiy
 
-Documented and published by Eli Donahue (@elijdonahue) at Aras Labs.
+Documented and published by Eli Donahue at Aras Labs. @elijdonahue
 
 ## License
 
