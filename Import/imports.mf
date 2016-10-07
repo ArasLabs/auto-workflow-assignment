@@ -1,4 +1,4 @@
 <imports>
   <package name="aras.labs.WorkflowAutomationExamples" path="WorkflowAutomationExamples\Import" />
-	<package name="aras.labs.AutoWorkflowAssignment" path="AutoWorkflowAssignment\Import" />
+  <package name="aras.labs.AutoWorkflowAssignment" path="AutoWorkflowAssignment\Import" />
 </imports>

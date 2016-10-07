@@ -1,6 +1,6 @@
 ﻿<AML>
  <Item type="Action" id="FCF34AD7044F4F78BECFE1831A27F680" action="add">
-  <item_query></item_query>
+  <item_query />
   <location>server</location>
   <method keyed_name="labs_GetControlledItemCSharp" type="Method">
    <Item type="Method" action="get" select="id">
