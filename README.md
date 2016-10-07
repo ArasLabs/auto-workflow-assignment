@@ -41,8 +41,6 @@ You are now ready to login to Aras and try out Automatic Workflow Assignments.
 
 ## Usage
 
-The Find Parent Package action is accessible from the Action menu in the Aras main window, the main grid context menu, and the Action menu in the Item tear-off window. The steps below show how to use the Find Parent Package action in the Aras main window Action menu.
-
 1. Log in to Aras as admin.
 2. Navigate to **Workflow Examples** in the table of contents (TOC).
 3. Create a new Workflow Assignment Example item.
