@@ -26,7 +26,7 @@
       <can_refuse>0</can_refuse>
       <consolidate_ondelegate>0</consolidate_ondelegate>
       <expected_duration>0</expected_duration>
-      <icon>../images/Icons/16x16/16x16_redx.gif</icon>
+      <icon>../images/Delete.svg</icon>
       <is_auto>1</is_auto>
       <is_end>1</is_end>
       <is_start>0</is_start>
@@ -52,7 +52,7 @@
       <can_refuse>0</can_refuse>
       <consolidate_ondelegate>0</consolidate_ondelegate>
       <expected_duration>0</expected_duration>
-      <icon>../images/Icons/16x16/16x16_arrow_right.gif</icon>
+      <icon>../images/WorkflowStart.svg</icon>
       <is_auto>1</is_auto>
       <is_end>0</is_end>
       <is_start>1</is_start>
@@ -94,7 +94,7 @@
         <name>Innovator Admin</name>
        </Item>
       </escalate_to>
-      <icon>../images/Icons/20x20/20x22_gray_ball.gif</icon>
+      <icon>../images/WorkflowNode.svg</icon>
       <is_auto>0</is_auto>
       <is_end>0</is_end>
       <is_start>0</is_start>
