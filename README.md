@@ -5,12 +5,17 @@ The Automatic Workflow Assignment project demonstrates how to implement dynamic 
 #### How it works
 A method is attached to the activity as an OnActivate server event (the activate event is fired before assignments are checked, so this is the best place to do dynamic assignments).  When the activity is activated, the method finds the controlled item, reads the Reviewer properties and creates an assignment for each. The voting weight is automatically set such that all specified reviewers must vote for the activity to complete.
 
-## Project Details
+## History
 
-**Built Using:** Aras 11.0 SP7
-**Browsers Tested:** Internet Explorer 11, Firefox 38 ESR, Chrome
+Release | Notes
+--------|--------
+[v1.0.0](https://github.com/ArasLabs/auto-workflow-assignment/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
-> Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
+#### Supported Aras Versions
+
+Project | Aras
+--------|------
+[v1.0.0](https://github.com/ArasLabs/auto-workflow-assignment/releases/tag/v1.0.0) | 10.0 SPx, 11.0 SP7
 
 ## Installation
 
