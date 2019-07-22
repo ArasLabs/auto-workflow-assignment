@@ -1,4 +1,7 @@
-<Item type="Value" action="add" id="59CBA74A1486406D8326792978ABB060">
-	<label>Workflow Examples</label>
-	<value>Workflow Examples</value>
-</Item>
+<AML>
+	<Item type="Value" action="add" id="59CBA74A1486406D8326792978ABB060">
+		<label>Workflow Examples</label>
+		<value>Workflow Examples</value>
+		<source_id type="List" keyed_name="Categories">EAB29654E2CD4D30B376957788198B40</source_id>
+	</Item>
+</AML>
