@@ -9,6 +9,7 @@ A method is attached to the activity as an OnActivate server event (the activate
 
 Release | Notes
 --------|--------
+[v1.1.0](https://github.com/ArasLabs/auto-workflow-assignment/releases/tag/v1.1.0) | Updated Tags for TOC List
 [v1.0.1](https://github.com/ArasLabs/auto-workflow-assignment/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, Firefox 60 ESR, Chrome.
 [v1.0.0](https://github.com/ArasLabs/auto-workflow-assignment/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
@@ -16,7 +17,8 @@ Release | Notes
 
 Project | Aras
 --------|------
-[v1.0.1](https://github.com/ArasLabs/auto-workflow-assignment/releases/tag/v1.0.1) | 10.0 SPx, 11.0 SP7+, 11.0 SP12+, 11.0 SP15
+[v1.1.0](https://github.com/ArasLabs/auto-workflow-assignment/releases/tag/v1.1.0) | 10.0+, 11.0+
+[v1.0.1](https://github.com/ArasLabs/auto-workflow-assignment/releases/tag/v1.0.1) | 10.0+, 11.0+
 [v1.0.0](https://github.com/ArasLabs/auto-workflow-assignment/releases/tag/v1.0.0) | 10.0 SPx, 11.0 SP7
 
 ## Installation
